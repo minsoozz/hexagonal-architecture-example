@@ -9,11 +9,11 @@ import jakarta.persistence.Id
 class BoardJpaEntity(
     title: String,
     content: String,
-    id: Long?
+    id: Long = 0
 ) {
     @Id
     @GeneratedValue
-    var id: Long? = id
+    var id: Long = id
 
     @Column(nullable = false)
     var title: String = title
