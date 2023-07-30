@@ -20,5 +20,10 @@ class BoardJpaEntity(
 
     @Column(nullable = false)
     var content: String = content
+
+    fun update(title: String, content: String) {
+        this.title = title
+        this.content = content
+    }
 }
 

@@ -8,5 +8,9 @@ class BoardMapper {
         fun entityToDomain(boardJpaEntity: BoardJpaEntity): Board {
             return Board(boardJpaEntity.title, boardJpaEntity.content, boardJpaEntity.id)
         }
+
+        fun domainToEntity(board: Board): BoardJpaEntity {
+            return BoardJpaEntity(board.title, board.content)
+        }
     }
 }
