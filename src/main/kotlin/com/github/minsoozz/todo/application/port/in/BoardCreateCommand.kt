@@ -1,6 +1,6 @@
 package com.github.minsoozz.todo.application.port.`in`
 
-data class BoardWriteCommand(
+data class BoardCreateCommand(
     val title: String,
     val content: String
 )
