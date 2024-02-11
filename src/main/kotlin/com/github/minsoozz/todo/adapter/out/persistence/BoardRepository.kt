@@ -17,7 +17,7 @@ class BoardRepository(
         })
     }
 
-    override fun write(board: Board) {
+    override fun create(board: Board) {
         boardJpaRepository.save(BoardMapper.domainToEntity(board))
     }
 

@@ -15,7 +15,7 @@ class TodoController(
 ) {
 
     @PostMapping
-    fun write(@RequestBody boardCreateCommand: BoardCreateCommand) {
+    fun create(@RequestBody boardCreateCommand: BoardCreateCommand) {
         return boardUseCase.create(boardCreateCommand)
     }
 

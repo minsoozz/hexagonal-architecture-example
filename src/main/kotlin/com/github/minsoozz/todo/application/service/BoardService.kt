@@ -16,7 +16,7 @@ class BoardService(
 
     override fun create(boardCreateCommand: BoardCreateCommand) {
         val board = Board(boardCreateCommand.title, boardCreateCommand.content)
-        boardPersistencePort.write(board)
+        boardPersistencePort.create(board)
     }
 
     override fun read(boardReadCommand: BoardReadCommand): BoardReadResponse {
